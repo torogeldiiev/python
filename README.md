@@ -29,3 +29,12 @@ This project is a REST API service that provides information about vulnerable pa
 To run the application, execute the following command:
 ```bash
 uvicorn main:app --host 0.0.0.0 --port 80
+```
+
+This is the sample requests:
+```bash
+http://127.0.0.1/versions?name=openssl
+http://127.0.0.1/versions?name=xz-utils
+http://127.0.0.1/versions?name=sudo
+```
+
