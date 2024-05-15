@@ -15,7 +15,7 @@ This project is a REST API service that provides information about vulnerable pa
 
 1. Clone the repository:
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/torogeldiiev/python.git
     cd <repository_name>
     ```
 
