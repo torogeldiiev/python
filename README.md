@@ -1,14 +1,12 @@
 # Vulnerability Checker
 
-This project is a REST API service that provides information about vulnerable package versions.
-
 ## Description
 
-The API fetches vulnerability data from the OSV (Open Source Vulnerabilities) database for packages in the Debian and Ubuntu ecosystems. It aggregates the affected versions of a package from both ecosystems and provides a list of unique versions.
+This project is a REST API service that provides information about vulnerable package versions.
 
 ## Features
 
-- Fetches vulnerability data from the OSV database
+- Fetches vulnerability data from the OSV (Open Source Vulnerabilities) database
 - Aggregates affected versions from Debian and Ubuntu ecosystems
 - Provides a list of unique affected versions for a given package
 - Returns the result as a JSON response
@@ -16,3 +14,18 @@ The API fetches vulnerability data from the OSV (Open Source Vulnerabilities) da
 ## Installation
 
 1. Clone the repository:
+    ```bash
+    git clone <repository_url>
+    cd <repository_name>
+    ```
+
+2. Install the required packages using pip:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+To run the application, execute the following command:
+```bash
+uvicorn main:app --host 0.0.0.0 --port 80
